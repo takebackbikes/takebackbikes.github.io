@@ -1,9 +1,15 @@
 body {
-    color:hotpink;
-    background-image:url(background1.png);
-    background-color:white;
-    background-blend-mode:luminosity;
+    color:white;
+    background-image:url(background1.png),url(background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode:soft-light;
+    text-align: center;
+}
+h1 {
+    color:white
 }
 h3 {
-    color:maroon;
+    color:white;
 }
