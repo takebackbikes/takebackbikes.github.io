@@ -1,0 +1,9 @@
+body {
+    color:hotpink;
+    background-image:url(background1.png);
+    background-color:white;
+    background-blend-mode:luminosity;
+}
+h3 {
+    color:maroon;
+}

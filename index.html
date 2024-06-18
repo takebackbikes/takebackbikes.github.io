@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> bike resistance </title>
+    <link rel="stylesheet" href="prettybike.css"/>
+</head>
+<body>
+    <div> bike resistance </div>
+    <h3>Statement on Palestinian liberation and the ongoing genocide</h3>
+        <div> words</div>
+    <h3>Statement on the Encampment and the raid</h3>
+        <div> words </div>
+    <h3>Video of raid</h3>
+        <div>video!</div>
+        <video></video>
+    <h3>Biking Tips</h3>
+        <div>put bike on bus, where to fill tires, etc</div>
+    <h3>Bike Code</h3>
+        <button id="button1" onclick="revealCode()">Click to reveal bike code</button>
+        <div id="code"></div>
+        <script>
+            function revealCode() {
+                document.getElementById("code").innerHTML = "1234";
+                const element = document.getElementById("button1");
+                    element.remove();
+            }
+        </script>
+ </body>
+</html>
