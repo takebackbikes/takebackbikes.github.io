@@ -8,12 +8,12 @@
 <body>
     <script>
         window.onload = function() {
-            $(".main-container").hide();
             if(!window.location.hash) {
+                $(".main-container").hide();
                 window.location = window.location + '#loaded';
                 window.location.reload();
+                $(".main-container").unhide();
             }
-            $(".main-container").unhide();
         }
     </script>
     <div class="main-container">

@@ -17,14 +17,14 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 4dvh;
+    font-size: 4vh;
     font-family: coolGraffitiFont;
     color:white;
 }
 
 .main-container h3 {
     text-align: left;
-    font-size: 3dvh;
+    font-size: 3vh;
     font-family: coolGraffitiFont;
     color:white;
 }
@@ -33,23 +33,23 @@ h1 {
 .main-container .unlock { 
   background-color: rgba(255, 255, 255, 0);
   color: rgb(255, 255, 255);
-  padding: 1dvh 1dvh;
+  padding: 1vh 1vh;
   text-align: center;
   display: inline-block;
-  font-size: 2.1dvh;
-  border-radius: 5dvw;
+  font-size: 2.1vh;
+  border-radius: 5vw;
   border: 1px solid white;
   box-shadow: 0.3em 0.3em 1em rgb(0 200 0 / 30%);
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main-container {
-  width: 80dvw;
-  padding: 0dvw 5dvw 5dvw 3dvw;
-  margin: 5dvw 0dvw 0dvw 5dvw;
+  width: 80vw;
+  padding: 0vw 5vw 5vw 3vw;
+  margin: 5vw 0vw 0vw 5vw;
   border-style:hidden;
-  border-radius: 7dvw;
-  font-size: 2dvh;
+  border-radius: 7vw;
+  font-size: 2vh;
 }
 
 hr {
