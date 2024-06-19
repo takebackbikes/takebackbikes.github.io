@@ -6,6 +6,14 @@
     <link rel="icon" href="icon.png"/>
 </head>
 <body>
+    <script>
+        window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            }
+        }
+    </script>
     <div class="main-container">
         <div class="main-title">
             <h1> Washtenaw Resistance Bike Share </h1>
@@ -24,8 +32,8 @@
         <hr>
 
         <h3>Video of the Raid</h3>
-        <div>video!</div>
-        <video></video>
+        <div>video! goes here</div>
+        <!--commenting out until actual video <video> </video> -->
         <hr>
 
         <h3>Biking Tips</h3>
