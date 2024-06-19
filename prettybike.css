@@ -1,17 +1,61 @@
+@font-face {
+    font-family: coolGraffitiFont;
+    src: url(heading-font.ttf);
+}
+
 body {
-    color:white;
-    background-image:url(background1.png),url(background2.png);
-    background-size: cover;
+    color: #fcf9f9;
+    background-image:url(background2.png), url(background1.png);
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-blend-mode:soft-light;
+    background-blend-mode: darken;
+    background-color: #544740ee;
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 h1 {
+    text-align: center;
+    font-size: 4dvh;
+    font-family: coolGraffitiFont;
     color:white;
-    text-shadow: 2px 2px red;
 }
-h3 {
+
+.main-container h3 {
+    text-align: left;
+    font-size: 3dvh;
+    font-family: coolGraffitiFont;
     color:white;
-    text-shadow: 2px 2px red;
+}
+
+/* button and code styling */
+.main-container .unlock { 
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  padding: 1dvh 1dvh;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.1dvh;
+  border-radius: 5dvw;
+  border: 1px solid white;
+  box-shadow: 0.3em 0.3em 1em rgb(0 200 0 / 30%);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-container {
+  width: 80dvw;
+  padding: 0dvw 5dvw 5dvw 3dvw;
+  margin: 5dvw 0dvw 0dvw 5dvw;
+  border-style:hidden;
+  border-radius: 7dvw;
+  font-size: 2dvh;
+}
+
+hr {
+  border: 0.8px solid white;
+}
+
+.enter {
+  animation: movein 1s linear;
 }
