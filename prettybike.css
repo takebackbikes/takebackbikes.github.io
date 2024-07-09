@@ -9,12 +9,7 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
-<<<<<<< HEAD
-    background-blend-mode:hard-light;
-=======
-    background-blend-mode: darken;
-    background-color: #544740ee;
->>>>>>> f498296fa0fb525a3d03898e88e61904350badf4
+    background-blend-mode:soft-light;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
