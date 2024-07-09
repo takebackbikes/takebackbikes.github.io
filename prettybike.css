@@ -4,28 +4,47 @@
 }
 
 body {
-    color: #fcf9f9;
+    color: #00346e;
     background-image:url(TBBlogo.png);
-    background-size: 200px;
-    background-repeat: repeat;
-    background-position: center center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 90px;
     background-blend-mode:soft-light;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:link {
+    color: hotpink;
 }
 
 h1 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:white;
+    color:#00346e;
 }
+
+h2 {
+    text-align: center;
+    font-size: 4vh;
+    font-family: coolGraffitiFont;
+    color:#00346e;
+}
+h3 {
+    text-align: center;
+    font-size: 4vh;
+    font-family: coolGraffitiFont;
+    color:#00346e;
+}
+
 
 .main-container h3 {
     text-align: center;
     font-size: 3vh;
     font-family: coolGraffitiFont;
-    color:white;
+    color:#00346e;
 }
 
 /* button and code styling */
