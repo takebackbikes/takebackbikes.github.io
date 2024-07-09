@@ -5,12 +5,12 @@
 
 body {
     color: #00346e;
-    background-image:url(TBBlogo.png);
+    /*background-image:url(TBBlogo.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: -300px;
-    background-blend-mode:soft-light;
+    background-position-y: center;
+    background-blend-mode:soft-light;*/
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
