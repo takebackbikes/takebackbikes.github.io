@@ -9,7 +9,7 @@ body {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 90px;
+    background-position-y: -300px;
     background-blend-mode:soft-light;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -31,12 +31,15 @@ h2 {
     font-size: 4vh;
     font-family: coolGraffitiFont;
     color:#00346e;
+    margin-bottom: 0;
 }
 h3 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
     color:#00346e;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -76,4 +79,11 @@ hr {
 
 .enter {
   animation: movein 1s linear;
+}
+
+#rd {
+    position:absolute;
+    width:100px;
+    background-image:url(TBBlogo.png);
+    background-repeat: repeat-x;
 }
