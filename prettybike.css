@@ -6,8 +6,8 @@
 body {
     color: #fcf9f9;
     background-image:url(TBBlogo.png);
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-size: 200px;
+    background-repeat: repeat;
     background-position: center center;
     background-blend-mode:soft-light;
     text-align: center;
