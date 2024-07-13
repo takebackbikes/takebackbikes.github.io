@@ -4,8 +4,8 @@
 }
 
 body {
-    color: #00346e;
-    /*background-image:url(TBBlogo.png);
+    color: #450B38;
+    /*background-image:url(TBBgreen.png);
     background-size: 300px;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -23,21 +23,20 @@ h1 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#00346e;
+    color:#450B38;
 }
 
 h2 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#00346e;
-    margin-bottom: 0;
+    color:#450B38;
 }
 h3 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#00346e;
+    color:#450B38;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -47,7 +46,7 @@ h3 {
     text-align: center;
     font-size: 3vh;
     font-family: coolGraffitiFont;
-    color:#00346e;
+    color:#450B38;
 }
 
 /* button and code styling */
@@ -87,3 +86,43 @@ hr {
     background-image:url(TBBlogo.png);
     background-repeat: repeat-x;
 }
+
+div.a {
+  font-family: coolGraffitiFont;
+  font-size: 50px;
+  text-align:center;
+}
+div.a span {
+  background-color: #add3b3;
+}
+
+.columncontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20px;
+}
+div.columncontainer {
+  font-size: 15px;
+}
+.clh {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background-color: #D3ADCD;
+}
+.clt {
+  grid-column-start: 1;
+  grid-row-start: auto;
+}
+.crh {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  background-color: #D3ADCD;
+}
+.crt {
+  grid-column-start: 2;
+  grid-row-start: auto;
+}
+
+D3ADCD light purple
+450B38 dark purple
+00346e blue 
