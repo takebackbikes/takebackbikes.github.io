@@ -4,8 +4,8 @@
 }
 
 body {
-    color: #450B38;
-    background-image:url(background1.png background2.png);
+    color: black;
+    background-image:url(background1.png);
     background-repeat: no-repeat;
     background-blend-mode:lighten;
     background-size: cover;
@@ -21,20 +21,20 @@ h1 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#450B38;
+    color:white;
 }
 
 h2 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#450B38;
+    color:white;
 }
 h3 {
     text-align: center;
     font-size: 4vh;
     font-family: coolGraffitiFont;
-    color:#450B38;
+    color:rgb(185, 29, 29);
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -96,17 +96,17 @@ hr {
 .a {
   font-family: coolGraffitiFont;
   font-size: 50px;
-  color:#add3b3;
+  color:white;
   grid-column: 2 / span 2;
   text-align:center;
 }
 div.a span {
-  background-color: #450B38;
+  background-color: rgb(185, 29, 29);
 }
 .b {
   font-family: coolGraffitiFont;
   font-size: 22px;
-  color:#450B38;
+  color:white;
   grid-column: 2 / span 2;
   text-align:center;
   grid-column: 2 / span 2;
@@ -133,22 +133,22 @@ div.columncontainer {
 .clh {
   grid-column-start: 1;
   grid-row-start: 1;
-  background-color: #D3ADCD;
+  background-color: lightcoral;
 }
 .clt {
   grid-column-start: 1;
   grid-row-start: auto;
-  background-color: #add3b3;
+  background-color: white;
 }
 .crh {
   grid-column-start: 2;
   grid-row-start: 1;
-  background-color: #D3ADCD;
+  background-color: lightcoral;
 }
 .crt {
   grid-column-start: 2;
   grid-row-start: auto;
-  background-color: #add3b3;
+  background-color: white;
 }
 
 D3ADCD light purple
