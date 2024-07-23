@@ -5,12 +5,10 @@
 
 body {
     color: #450B38;
-    /*background-image:url(TBBgreen.png);
-    background-size: 300px;
+    background-image:url(background1.png background2.png);
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-blend-mode:soft-light;*/
+    background-blend-mode:lighten;
+    background-size: cover;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -87,22 +85,50 @@ hr {
     background-repeat: repeat-x;
 }
 
-div.a {
+.titlecontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: 
+    "logo1 text1 text2 logo2";
+}
+
+.a {
   font-family: coolGraffitiFont;
   font-size: 50px;
+  color:#add3b3;
+  grid-column: 2 / span 2;
   text-align:center;
 }
 div.a span {
-  background-color: #add3b3;
+  background-color: #450B38;
 }
-
+.b {
+  font-family: coolGraffitiFont;
+  font-size: 22px;
+  color:#450B38;
+  grid-column: 2 / span 2;
+  text-align:center;
+  grid-column: 2 / span 2;
+}
+.logo1 {
+  grid-area: logo1;
+}
+.logo2 {
+  grid-area: logo2;
+}
+img {
+  max-width:75%;
+  height:auto;
+  object-fit: cover;
+}
 .columncontainer {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 20px;
 }
 div.columncontainer {
-  font-size: 15px;
+  font-size: 14px;
 }
 .clh {
   grid-column-start: 1;
@@ -112,6 +138,7 @@ div.columncontainer {
 .clt {
   grid-column-start: 1;
   grid-row-start: auto;
+  background-color: #add3b3;
 }
 .crh {
   grid-column-start: 2;
@@ -121,6 +148,7 @@ div.columncontainer {
 .crt {
   grid-column-start: 2;
   grid-row-start: auto;
+  background-color: #add3b3;
 }
 
 D3ADCD light purple
