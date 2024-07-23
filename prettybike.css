@@ -5,16 +5,16 @@
 
 body {
     color: black;
-    background-image:url(background1.png);
+    background-image:url(background1.png), url(background2.png);
     background-repeat: no-repeat;
-    background-blend-mode:lighten;
+    background-blend-mode:soft-light;
     background-size: cover;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
-    color: hotpink;
+    color: green;
 }
 
 h1 {
@@ -44,7 +44,7 @@ h3 {
     text-align: center;
     font-size: 3vh;
     font-family: coolGraffitiFont;
-    color:#450B38;
+    color:white;
 }
 
 /* button and code styling */
@@ -128,9 +128,10 @@ img {
   grid-column-gap: 20px;
 }
 div.columncontainer {
-  font-size: 14px;
+  font-size: 80%;
 }
 .clh {
+  font-size: xx-large;
   grid-column-start: 1;
   grid-row-start: 1;
   background-color: lightcoral;
@@ -139,8 +140,16 @@ div.columncontainer {
   grid-column-start: 1;
   grid-row-start: auto;
   background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 2%;
 }
 .crh {
+  font-size: xx-large;
   grid-column-start: 2;
   grid-row-start: 1;
   background-color: lightcoral;
@@ -149,4 +158,11 @@ div.columncontainer {
   grid-column-start: 2;
   grid-row-start: auto;
   background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  border-radius: 2%;
 }
