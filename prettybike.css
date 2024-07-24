@@ -50,7 +50,7 @@ h3 {
 /* button and code styling */
 .main-container .unlock { 
   background-color: rgba(255, 255, 255, 0);
-  color: rgb(255, 255, 255);
+  color: rgb(185, 29, 29);
   padding: 1vh 1vh;
   text-align: center;
   display: inline-block;
@@ -170,4 +170,65 @@ div.columncontainer {
   padding-bottom: 1%;
   padding-top: 1%;
   border-radius: 2%;
+}
+
+.videotitle {
+  text-align: center;
+  font-size: 4vh;
+  font-family: coolGraffitiFont;
+  color:white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.videotitle span {
+  background-color: lightcoral;
+}
+
+.bikeshare {
+  text-align: center;
+  font-size: 4vh;
+  font-family: coolGraffitiFont;
+  color:white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bikeshare span {
+  background-color: lightcoral;
+}
+.bikesharewords {
+  background-color: white;
+  border-radius: 5%;
+  font-size: small;
+  padding: 2%;
+}
+
+.bikingtips {
+  text-align: center;
+  font-size: 4vh;
+  font-family: coolGraffitiFont;
+  color:white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.bikingtips span {
+  background-color: lightcoral;
+}
+.bikingtipswords {
+  background-color: white;
+  border-radius: 5%;
+  font-size: small;
+  padding: 2%;
+}
+
+
+.unlock {
+  text-align: center;
+  font-size: 4vh;
+  font-family: coolGraffitiFont;
+  color:white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.unlock span {
+  background-color: lightcoral;
 }
