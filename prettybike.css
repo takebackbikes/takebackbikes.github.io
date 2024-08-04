@@ -219,7 +219,12 @@ div.columncontainer {
   font-size: small;
   padding: 2%;
 }
-
+.words {
+  background-color: white;
+  border-radius: 5%;
+  font-size: small;
+  padding: 2%;
+}
 
 .unlock {
   text-align: center;
@@ -232,3 +237,4 @@ div.columncontainer {
 .unlock span {
   background-color: lightcoral;
 }
+
