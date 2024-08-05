@@ -4,237 +4,97 @@
 }
 
 body {
-    color: black;
-    background-image:url(background1.png), url(background2.png);
-    background-repeat: no-repeat;
-    background-blend-mode:soft-light;
-    background-size: cover;
+    color: rgb(16, 66, 26);
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-a {
-    color: green;
-}
-
-h1 {
-    text-align: center;
-    font-size: 4vh;
-    font-family: coolGraffitiFont;
-    color:white;
-}
-
-h2 {
-    text-align: center;
-    font-size: 4vh;
-    font-family: coolGraffitiFont;
-    color:white;
-}
-h3 {
-    text-align: center;
-    font-size: 4vh;
-    font-family: coolGraffitiFont;
-    color:rgb(185, 29, 29);
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-
-.main-container h3 {
-    text-align: center;
-    font-size: 3vh;
-    font-family: coolGraffitiFont;
-    color:white;
-}
-
-/* button and code styling */
-.main-container .unlock { 
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(185, 29, 29);
-  padding: 1vh 1vh;
-  text-align: center;
-  display: inline-block;
-  font-size: 2.1vh;
-  border-radius: 5vw;
-  border: 1px solid white;
-  box-shadow: 0.3em 0.3em 1em rgb(0 200 0 / 30%);
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.main-container {
-  width: 80vw;
-  padding: 0vw 5vw 5vw 3vw;
-  margin: 5vw 0vw 0vw 5vw;
-  border-style:hidden;
-  border-radius: 7vw;
-  font-size: 2vh;
-}
-
-hr {
-  border: 0.8px solid white;
+    padding: 3vw; /* 3% viewport width */
+    font-size: 1.7vw;
 }
 
 .enter {
   animation: movein 1s linear;
 }
 
-#rd {
-    position:absolute;
-    width:100px;
-    background-image:url(TBBlogo.png);
-    background-repeat: repeat-x;
-}
-
-.titlecontainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-template-areas: 
-  "logo1 text1 text2 logo2";
-}
-
-.a {
-  font-family: coolGraffitiFont;
-  font-size: 300%;
-  color:white;
-  grid-column: 2 / span 2;
-  text-align:center;
-}
-div.a span {
-  background-color: rgb(185, 29, 29);
-}
-.b {
-  font-family: coolGraffitiFont;
-  font-size: 22px;
-  color:white;
-  grid-column: 2 / span 2;
-  text-align:center;
-  grid-column: 2 / span 2;
-}
-.logo1 {
-  grid-area: logo1;
-}
-.logo2 {
-  grid-area: logo2;
-}
 img {
-  max-width:75%;
-  height:auto;
-  object-fit: cover;
+  margin:auto;
+  object-fit: contain;
+  max-height: 30vh;
 }
-.titlecontainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+
+h2 {
+  font-size: 4vw;
+  font-family: coolGraffitiFont;
+  margin: 1vw 1vw 1vw 3vw;
+  color:rgb(16, 66, 26);
+  text-align: center;
 }
+
+h3 {
+  font-size: 3vw;
+  font-family: coolGraffitiFont;
+  color:lightcoral;
+}
+
+h3 span {
+  padding: 1% 5%;
+  margin: 4% 2%;
+}
+
 .columncontainer {
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 20px;
-}
-div.columncontainer {
-  font-size: 80%;
-}
-.clh {
-  font-size: xx-large;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  background-color: lightcoral;
-}
-.clt {
-  grid-column-start: 1;
-  grid-row-start: auto;
-  background-color: white;
-  text-align: justify;
-  text-justify: inter-word;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  border-radius: 2%;
-}
-.crh {
-  font-size: xx-large;
-  grid-column-start: 2;
-  grid-row-start: 1;
-  background-color: lightcoral;
-}
-.crt {
-  grid-column-start: 2;
-  grid-row-start: auto;
-  background-color: white;
-  text-align: justify;
-  text-justify: inter-word;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  border-radius: 2%;
+  grid-column-gap: 3%;
+  background:linear-gradient(rgba(8, 74, 24, 0.547),rgba(8, 74, 24, 0.617)) center/2px 100% no-repeat;
 }
 
-.videotitle {
-  text-align: center;
-  font-size: 4vh;
+/* button and code styling */
+.button { 
   font-family: coolGraffitiFont;
-  color:white;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.videotitle span {
-  background-color: lightcoral;
+  zoom: 1.3;
+  text-align:center;
 }
 
-.bikeshare {
+.button a {
+  color:rgb(16, 66, 26);
+}
+
+a {
+  text-decoration: none;
+  color:rgb(68, 185, 68);
+}
+
+a:hover {
+  color:rgb(119, 197, 119);
+}
+
+.subheading {
+  padding: 3% 4%;
+  margin: 1% 1% 1% 1%;
+}
+
+.subheading div {
+  line-height: 2.25vw;
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
+
+.words b {
+  font-size: 120%;
   text-align: center;
-  font-size: 4vh;
-  font-family: coolGraffitiFont;
-  color:white;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.bikeshare span {
-  background-color: lightcoral;
-}
-.bikesharewords {
-  background-color: white;
-  border-radius: 5%;
-  font-size: small;
-  padding: 2%;
 }
 
-.bikingtips {
-  text-align: center;
-  font-size: 4vh;
-  font-family: coolGraffitiFont;
-  color:white;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.bikingtips span {
-  background-color: lightcoral;
-}
-.bikingtipswords {
-  background-color: white;
-  border-radius: 5%;
-  font-size: small;
-  padding: 2%;
-}
-.words {
-  background-color: white;
-  border-radius: 5%;
-  font-size: small;
-  padding: 2%;
+iframe {
+  display:block;
+  margin:auto;
+  width: 100%;
 }
 
-.unlock {
-  text-align: center;
-  font-size: 4vh;
-  font-family: coolGraffitiFont;
-  color:white;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.photonextcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 3%;
 }
-.unlock span {
-  background-color: lightcoral;
-}
-
