@@ -4,8 +4,12 @@
 }
 
 body {
-    color: rgb(16, 66, 26);
+    color: rgb(28, 22, 22);
     text-align: center;
+    background-image:url(static/background1.png), url(static/background2.png);
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-size: cover;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 3vw; /* 3% viewport width */
     font-size: 2vw;
@@ -18,23 +22,26 @@ body {
 img {
   margin:auto;
   object-fit: contain;
-  max-width: 80vw;
-  max-height: 40vh;
+  max-width: 80%;
+  max-height: 40%;
 }
 
 
 h2 {
-  font-size: 5vw;
+  font-size: 5.2vw;
   font-family: coolGraffitiFont;
   margin: 1vw 1vw 1vw 3vw;
-  color:rgb(16, 66, 26);
+  color: rgb(138, 33, 33);
   text-align: center;
+  line-height: 5vw;
+  padding: 2%;
 }
 
 h3 {
   font-size: 4vw;
   font-family: coolGraffitiFont;
   color:lightcoral;
+  line-height: 4vw;
 }
 
 h3 span {
@@ -42,19 +49,19 @@ h3 span {
   margin: 4% 2%;
 }
 
-.columncontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 3%;
-  background:linear-gradient(rgba(8, 74, 24, 0.547),rgba(8, 74, 24, 0.617)) center/2px 100% no-repeat;
+@media (min-width: 700px) {
+  .columncontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+  }
 }
 
 /* button and code styling */
 .button { 
   font-family: coolGraffitiFont;
-  zoom: 1.3;
   text-align:center;
-  font-size: 3.7vw;
+  font-size: 3.2vw;
 }
 
 .button a {
@@ -63,16 +70,17 @@ h3 span {
 
 a {
   text-decoration: none;
-  color:rgb(68, 185, 68);
+  color:rgb(43, 170, 43);
 }
 
 a:hover {
-  color:rgb(119, 197, 119);
+  color:rgb(36, 118, 36);
 }
 
 .subheading {
-  padding: 3% 4%;
-  margin: 1% 1% 1% 1%;
+  padding: 3% 7% 3% 7%;
+  margin: 1% 1% 1% 1%;  
+  background-color: rgb(255, 255, 255);
 }
 
 .subheading div {
@@ -93,8 +101,4 @@ iframe {
   display:block;
   margin:auto;
   width: 100%;
-}
-
-.collagedphotos {
-  min-height: 30vw;
 }
