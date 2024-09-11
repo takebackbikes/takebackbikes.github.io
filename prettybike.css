@@ -33,7 +33,7 @@ img {
 
 
 h2 {
-  font-size: 5.2vw;
+  font-size: 5.2vh;
   font-family: coolGraffitiFont, numbers;
   margin: 1vw 1vw 1vw 3vw;
   color: rgb(138, 33, 33);
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.5vw;
+  font-size: 4.5vh;
   font-family: coolGraffitiFont, numbers;
   color:lightcoral;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ h3 {
 .button { 
   font-family: coolGraffitiFont, numbers;
   text-align:center;
-  font-size: 4vw;
+  font-size: 4vh;
 }
 
 .button a {
@@ -74,7 +74,7 @@ a {
 }
 
 a:hover {
-  color: #19d08d; /* Green */
+  color: #19d08d;
 }
 
 .subheading {
@@ -109,7 +109,7 @@ hr {
   text-align: left;
   font-family: coolGraffitiFont, numbers;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 3.5vh;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -138,7 +138,7 @@ hr {
 
 button { 
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.7vw;
+  font-size: 3.7vh;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -147,8 +147,7 @@ button {
 }
 
 .unclicked:hover {
-  background-color: #19d08d; /* Green */
-  color: white;
+  color: #19d08d;
 }
 
 .footer {
@@ -157,12 +156,12 @@ button {
   text-align: center;
   color: rgb(16, 66, 26);
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.5vw;
+  font-size: 3.5vh;
 }
 
 .icon {
   color: rgb(16, 66, 26);
-  font-size: 6vw;
+  font-size: 6h;
 }
 
 i {
@@ -170,7 +169,7 @@ i {
 }
 
 i:hover {
-  color: #19d08d; /* Green */
+  color: #19d08d;
 }
 
 .coral {
