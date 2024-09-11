@@ -15,21 +15,27 @@
     </div>
 
     <div class="meet-the-bikes">
-        <h3> STICKY (it/she)</h3>
+        <h3> bike #1: STICKY (it/she)</h3>
         <div>
             <div>
                 <img src="../static/bikes/sticky-itshe.jpg">
             </div> 
+            <div>
+              description: black bike with red and green tape
+            </div>
             <button id="bike1" class='unclicked' onclick="revealCode(this)">
                click to reveal Sticky's code
             </button>
         </div>
         <br>
         <hr>
-        <h3> PANTS (they/she)</h3>
+        <h3> bikes #2: PANTS (they/she)</h3>
         <div>
             <div>
                 <img src="../static/bikes/pants-theyshe.jpg">
+            </div>
+            <div>
+              description: purple bike with black milk crate
             </div>
             <button id="bike2" class='unclicked' onclick="revealCode(this)">
                 click to reveal Pants' code
@@ -37,22 +43,31 @@
         </div>
         <br>
         <hr>
-        <h3> LILO (any)</h3>
+        <h3> bike #3: LILO (any)</h3>
         <div>
             <div>
                 <img src="../static/bikes/lilo-any.png">
-            </div> 
+            </div>
+            <div>
+                description: copper bike with black milk crate and Palestinian flag painted on the side
+            </div>
+            <div>
+                <span class="coral">NOTE:</span> use back pedal to brake!
+            </div>
             <button id="bike3" class='unclicked' onclick="revealCode(this)">
                 click to reveal Lilo's code
             </button>
         </div>
         <br>
         <hr>
-        <h3> SANDI (she/her)</h3>
+        <h3> bike #4: SANDI (she/her)</h3>
         <div>
             <div>
                 <img src="../static/bikes/sandi-sheher.png">
             </div> 
+            <div>
+              description: off-white bike with blue milk crate and flowers painted on the side
+            </div>
             <button id="bike4" class='unclicked' onclick="revealCode(this)">
                 click to reveal Sandi's code
             </button>
@@ -61,13 +76,13 @@
         <a href="../index.html"><h3>go back to the main page?</h3></a>
     </div>
 
-    <div class="footer icons">
+    <div class="footer">
         &nbsp;
-        <a href="https://www.instagram.com/takebackbikes"><i class="fa-brands fa-instagram fa-2xl icon"></i></a>
+        <a href="https://www.instagram.com/takebackbikes"><i class="fa-brands fa-instagram icon"></i></a>
         &nbsp;
-        <a href="mailto:TakeBackBikes@protonmail.com"><i class="fa fa-envelope fa-2xl icon"></i></a>
+        <a href="mailto:TakeBackBikes@protonmail.com"><i class="fa fa-envelope icon"></i></a>
         &nbsp;
-        <a href="https://givebutter.com/kb4qff"><i class="fa-solid fa-sack-dollar fa-2xl icon"></i></a>
+        <a href="https://givebutter.com/kb4qff"><i class="fa-solid fa-sack-dollar icon"></i></a>
 
         <br>
         takebackbikes 2024
@@ -77,7 +92,7 @@
     <div id="code"></div>
     <script>
         // replace w/ actual codes once have access
-        codes = ['1234','4567','8901','2345'];
+        codes = ['lock combination: 37,23,37','combination: 37,23,37','lock combination: 00,10,24','lock combination: 06,12,34'];
         function revealCode(element) {
             const bikeNum = element.id[element.id.length-1];
             element.innerHTML = codes[bikeNum-1];

@@ -1,12 +1,12 @@
 @font-face {
     font-family: coolGraffitiFont;
-    src: url(maybe.otf);
+    src: url(headingFont1.otf);
     font-size: x-large;
 }
 
 @font-face {
   font-family: numbers;
-  src: url(maybe.ttf);
+  src: url(headingFont2.ttf);
   font-size: x-large;
 }
 
@@ -28,6 +28,7 @@ img {
   object-fit: contain;
   max-width: 80%;
   max-height: 40%;
+  border-radius: 5%;
 }
 
 
@@ -105,7 +106,16 @@ hr {
 }
 
 .meet-the-bikes div {
+  text-align: left;
+  font-family: coolGraffitiFont, numbers;
   text-align: center;
+  font-size: 3.5vw;
+  border: none;
+  background-color: rgba(0, 136, 255, 0);
+  border-width: 2%;
+  color:rgb(16, 66, 26);
+  border-radius: 5%;
+  margin: 2%;
 }
 
 .meet-the-bikes h3 {
@@ -128,12 +138,11 @@ hr {
 
 button { 
   font-family: coolGraffitiFont, numbers;
-  text-align: center;
-  font-size: 4vw;
+  font-size: 3.7vw;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
-  color:rgb(16, 66, 26);
+  color: #19d08d;
   border-radius: 5%;
 }
 
@@ -142,15 +151,18 @@ button {
   color: white;
 }
 
-.icons {
+.footer {
   display: inline-block;
   line-height: 2;
   text-align: center;
   color: rgb(16, 66, 26);
+  font-family: coolGraffitiFont, numbers;
+  font-size: 3.5vw;
 }
 
 .icon {
   color: rgb(16, 66, 26);
+  font-size: 6vw;
 }
 
 i {
@@ -159,4 +171,14 @@ i {
 
 i:hover {
   color: #19d08d; /* Green */
+}
+
+.coral {
+  color: lightcoral;
+}
+
+.subheading2 {
+  color: rgb(16, 66, 26);
+  font-family: coolGraffitiFont, numbers;
+  font-size: 4.3vw;
 }
