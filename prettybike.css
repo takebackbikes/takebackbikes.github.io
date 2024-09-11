@@ -1,18 +1,22 @@
 @font-face {
     font-family: coolGraffitiFont;
-    src: url(heading-font.ttf);
+    src: url(maybe.otf);
+    font-size: x-large;
+}
+
+@font-face {
+  font-family: numbers;
+  src: url(maybe.ttf);
+  font-size: x-large;
 }
 
 body {
-    color: rgb(28, 22, 22);
-    text-align: center;
-    background-image:url(static/background1.png), url(static/background2.png);
-    background-repeat: no-repeat;
-    background-blend-mode:soft-light;
-    background-size: cover;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 3vw; /* 3% viewport width */
-    font-size: 2vw;
+  color: rgb(28, 22, 22);
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 3vw; /* 3% viewport width */
+  font-size: 2vw;
+  line-height: 1.4;
 }
 
 .enter {
@@ -29,27 +33,22 @@ img {
 
 h2 {
   font-size: 5.2vw;
-  font-family: coolGraffitiFont;
+  font-family: coolGraffitiFont, numbers;
   margin: 1vw 1vw 1vw 3vw;
   color: rgb(138, 33, 33);
   text-align: center;
-  line-height: 5vw;
   padding: 2%;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 4vw;
-  font-family: coolGraffitiFont;
+  font-size: 4.5vw;
+  font-family: coolGraffitiFont, numbers;
   color:lightcoral;
-  line-height: 4vw;
+  text-transform: uppercase;
 }
 
-h3 span {
-  padding: 1% 5%;
-  margin: 4% 2%;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 1250px) {
   .columncontainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -59,9 +58,9 @@ h3 span {
 
 /* button and code styling */
 .button { 
-  font-family: coolGraffitiFont;
+  font-family: coolGraffitiFont, numbers;
   text-align:center;
-  font-size: 3.2vw;
+  font-size: 4vw;
 }
 
 .button a {
@@ -74,17 +73,15 @@ a {
 }
 
 a:hover {
-  color:rgb(36, 118, 36);
+  color: #19d08d; /* Green */
 }
 
 .subheading {
   padding: 3% 7% 3% 7%;
-  margin: 1% 1% 1% 1%;  
-  background-color: rgb(255, 255, 255);
+  margin: 1% 1% 1% 1%;
 }
 
 .subheading div {
-  line-height: 2.25vw;
   text-align: left;
 }
 
@@ -101,4 +98,65 @@ iframe {
   display:block;
   margin:auto;
   width: 100%;
+}
+
+hr {
+  border-top: 2px dashed lightcoral;
+}
+
+.meet-the-bikes div {
+  text-align: center;
+}
+
+.meet-the-bikes h3 {
+  text-align: center;
+}
+
+
+
+.meet-the-bikes img {
+  border-radius: 5%;
+  margin:auto;
+  object-fit:inherit;
+  min-width: 300px;
+  max-height: 40%;
+}
+
+.meet-the-bikes h3 {
+  text-transform: none;
+}
+
+button { 
+  font-family: coolGraffitiFont, numbers;
+  text-align: center;
+  font-size: 4vw;
+  border: none;
+  background-color: rgba(0, 136, 255, 0);
+  border-width: 2%;
+  color:rgb(16, 66, 26);
+  border-radius: 5%;
+}
+
+.unclicked:hover {
+  background-color: #19d08d; /* Green */
+  color: white;
+}
+
+.icons {
+  display: inline-block;
+  line-height: 2;
+  text-align: center;
+  color: rgb(16, 66, 26);
+}
+
+.icon {
+  color: rgb(16, 66, 26);
+}
+
+i {
+  text-align:center;
+}
+
+i:hover {
+  color: #19d08d; /* Green */
 }
