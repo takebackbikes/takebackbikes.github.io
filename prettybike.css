@@ -33,7 +33,7 @@ img {
 
 
 h2 {
-  font-size: 5.2vh;
+  font-size: 5.2vw;
   font-family: coolGraffitiFont, numbers;
   margin: 1vw 1vw 1vw 3vw;
   color: rgb(138, 33, 33);
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.5vh;
+  font-size: 4.5vw;
   font-family: coolGraffitiFont, numbers;
   color:lightcoral;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ h3 {
 .button { 
   font-family: coolGraffitiFont, numbers;
   text-align:center;
-  font-size: 4vh;
+  font-size: 4vw;
 }
 
 .button a {
@@ -109,7 +109,7 @@ hr {
   text-align: left;
   font-family: coolGraffitiFont, numbers;
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 3.5vw;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -138,7 +138,7 @@ hr {
 
 button { 
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.7vh;
+  font-size: 3.7vw;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -156,7 +156,7 @@ button {
   text-align: center;
   color: rgb(16, 66, 26);
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.5vh;
+  font-size: 3.5vw;
 }
 
 .icon {
