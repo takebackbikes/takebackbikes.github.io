@@ -40,14 +40,18 @@
     mix-blend-mode: multiply;
 }
 
-@media screen and (max-width=900) {
+@media screen and (max-width=800px) {
     .titleimg {
         padding: 1rem;
         text-align: center;
-        height: 4rem !important;
+        max-height: 4rem !important;
     }
     .dropDownButton {
-        font-size: 2rem;
+        font-size: 20vh !important;
+    }
+    .dropDownItems {
+        font-size: 3rem;
+        top: 20;
     }
 }
 

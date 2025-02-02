@@ -124,10 +124,10 @@ hr {
   border-radius: 5%;
   margin:auto;
   object-fit:inherit;
-  width: 25vw;
+  width: 30vw;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #bikeRack img {
     border-radius: 5%;
     margin:auto;
