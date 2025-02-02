@@ -120,6 +120,26 @@ hr {
   background-color: rgba(0,0,0,0);
 }
 
+#bikeRack img {
+  border-radius: 5%;
+  margin:auto;
+  object-fit:inherit;
+  width: 25vw;
+}
+
+@media (max-width: 800px) {
+  #bikeRack img {
+    border-radius: 5%;
+    margin:auto;
+    object-fit:inherit;
+    width: 60vw;
+  }
+}
+
+.meet-the-bikes h3, .meet-the-bikes hr,  .meet-the-bikes button {
+  mix-blend-mode: multiply;
+}
+
 .meet-the-bikes div {
   text-align: left;
   font-family: coolGraffitiFont, numbers;
@@ -131,17 +151,11 @@ hr {
   color:rgb(16, 66, 26);
   border-radius: 5%;
   margin: 2%;
+
 }
 
 .meet-the-bikes h3 {
   text-align: center;
-}
-
-.meet-the-bikes img {
-  border-radius: 5%;
-  margin:auto;
-  object-fit:inherit;
-  width: 60vw;
 }
 
 button { 

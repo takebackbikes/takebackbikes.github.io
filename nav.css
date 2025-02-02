@@ -47,7 +47,7 @@
         height: 4rem !important;
     }
     .dropDownButton {
-        zoom: 200%;
+        font-size: 2rem;
     }
 }
 

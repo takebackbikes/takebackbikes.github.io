@@ -56,7 +56,7 @@ const getDropDownNav = () => {
     for (const navItem of navItems) {
         navItemsDivs += 
         `<div class="dropDownItem">
-            <a href="${navItem.link}"> ${navItem.text} </a>
+            <a onClick=removeDropDown() href="${navItem.link}"> ${navItem.text} </a>
         </div>`
     }
     return `
@@ -68,6 +68,10 @@ const getDropDownNav = () => {
 
 let dropDownOn = false;
 
+const removeDropDown = () => {
+  dropDownOn = false;
+  renderNav();
+}
 const useDropDown = () => {
   dropDownOn = !dropDownOn;
   renderNav();
@@ -86,7 +90,12 @@ const doDropDownNav = () => {
 }
 
 const renderNav = () => {
-  const div = window.innerWidth > 1200 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
+  const div = window.innerWidth > 1250 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
+  if (dropDownOn) {
+    document.querySelector('html').style.overflow = "hidden";
+  } else {
+    document.querySelector('html').style.overflow = "scroll";
+  }
   document.querySelector('#navContainer').innerHTML = div;
 };
 
