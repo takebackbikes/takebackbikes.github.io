@@ -69,7 +69,7 @@ const bikes = [
         notes: ''
     },
     {
-        name: 'Roxy (MacGyver',
+        name: 'Roxy (MacGyver)',
         pronouns: 'they/them',
         img: '../static/bikes/roxy.png',
         description: `yellow bike with 'hands off palestine' written on the side`,

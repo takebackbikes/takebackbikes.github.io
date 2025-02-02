@@ -1,64 +1,95 @@
-const titleimg = "https://cdn.glitch.global/bb39c166-73aa-4eb6-91a2-37e86f975c6b/titleimg.png?v=1737441557702";
+const titleimg = "/static/TBBGreenText.png";
 
-const bigNav =
-    `<div class="nav">
-      <a href="/"><img class="titleimg" loading="lazy" src=${titleimg} /></a>
-      <div id="nav-items" class="links">
-        <a href="/about.html">about</a>
-        <span class="divider">|</span>
-        <a href="/illustrations.html">illustrations</a>
-        <span class="divider">|</span>
-        <a href="/coding.html">coding</a>
-      </div>
+navItems = [
+    {
+        link: '/#palestine',
+        text: 'statement on palestine'
+    },
+    {
+        link: '/#raid',
+        text: 'the encampment and raid'
+    },
+    {
+        link: '/#about',
+        text: 'about'
+    },
+    {
+        link: "/meet-the-bikes",
+        text: 'the bikes'
+    },
+    {
+        link: '/how-to-use-your-bike',
+        text: 'how to use'
+    },
+];
+
+const getBigNav = () => {
+    let navItemsDivs = "";
+    for (const navItem of navItems) {
+        navItemsDivs += 
+        `<a href=${navItem.link}> ${navItem.text} </a>
+        <span class="divider">|</span>`
+    }
+
+    return `
+    <div class="bigNav">
+        <div>
+            <a href="/"><img class="titleimg" loading="lazy" src=${titleimg} /></a>
+        </div>
+        <div id="bigNavItems">
+            ${navItemsDivs}
+        </div>
     </div>`;
+}
 
 const smallNav =  
-  `<div>
+  `<div class="smallNav">
     <a href="/"><img class="titleimg" loading="lazy" src=${titleimg} /></a>
-    <button onClick=useDropDown() class="dropDownButton"> ≡ </button>
+    <button onClick=useDropDown() class="dropDownButton"> + </button>
   </div>`;
 
-const dropDownNav = 
-  `<div class="dropDown">
+const getDropDownNav = () => {
+    let navItemsDivs = `
     <div class="dropDownItem">
-      <a href="/about.html">about →</a>
-    </div>
-    <div class="dropDownItem">
-      <a href="/illustrations.html">illustrations →</a>
-    </div>
-    <div class="dropDownItem">
-      <a href="/coding.html"> coding →</a>
-    </div>
-  </div>`;
+        <a href="/"> home </a>
+    </div>`;
+    for (const navItem of navItems) {
+        navItemsDivs += 
+        `<div class="dropDownItem">
+            <a href="${navItem.link}"> ${navItem.text} </a>
+        </div>`
+    }
+    return `
+    <div class="dropDown"> 
+        <button onClick=useDropDown() class="dropDownButton"> x </button>
+        ${navItemsDivs} 
+    </div>`;
+};
 
 let dropDownOn = false;
 
 const useDropDown = () => {
-  dropDownOn = true;
-  document.querySelector('#navContainer').innerHTML = dropDownNav;
+  dropDownOn = !dropDownOn;
+  renderNav();
 }
 
-const doBigNav= () => {
-  document.querySelector('html').style['overflow-y'] = 'visible';
-  return bigNav;
+const doBigNav = () => {
+  return getBigNav();
 }
 
 const doSmallNav = () => {
-  document.querySelector('html').style['overflow-y'] = 'visible';
-  return smallNav
+  return smallNav;
 }
 
 const doDropDownNav = () => {
-  document.querySelector('html').style['overflow-y'] = 'hidden';
-  return dropDownNav;
+  return getDropDownNav();
 }
 
 const renderNav = () => {
-  const div = window.innerWidth > 900 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
+  const div = window.innerWidth > 1200 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
   document.querySelector('#navContainer').innerHTML = div;
 };
 
 window.addEventListener("resize", renderNav);
-
 
 renderNav();

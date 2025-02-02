@@ -10,32 +10,44 @@
   font-size: x-large;
 }
 
+html {
+  background: linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3);
+  background: -moz-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* FF 3.6+ */  
+  background: -ms-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* IE10 */  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,'#bcd4c3'), color-stop(100%, '#bcd4c3')); /* Safari 4+, Chrome 2+ */  
+  background: -webkit-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* Safari 5.1+, Chrome 10+ */  
+  background: -o-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* Opera 11.10 */  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bcd4c3'); /* IE6 & IE7 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bcd4c3')"; /* IE8+ */  
+}
+
 body {
-  color: rgb(28, 22, 22);
+  color: rgb(0, 0, 0);
   text-align: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 3vw; /* 3% viewport width */
-  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .enter {
   animation: movein 1s linear;
 }
 
-img {
+.front-img {
   margin:auto;
   object-fit: contain;
-  max-width: 80%;
+  width: 60vw;
   max-height: 40%;
   border-radius: 5%;
 }
 
 
 h2 {
-  font-size: 5.2vw;
+  font-size: 3.2rem;
   font-family: coolGraffitiFont, numbers;
-  margin: 1vw 1vw 1vw 3vw;
+  margin: 1rem 1rem 1rem 3rem;
   color: rgb(138, 33, 33);
   text-align: center;
   padding: 2%;
@@ -43,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.5vw;
+  font-size: 2.5rem;
   font-family: coolGraffitiFont, numbers;
   color:lightcoral;
   text-transform: uppercase;
@@ -61,7 +73,7 @@ h3 {
 .button { 
   font-family: coolGraffitiFont, numbers;
   text-align:center;
-  font-size: 4vw;
+  font-size: 2rem;
 }
 
 .button a {
@@ -78,6 +90,7 @@ a:hover {
 }
 
 .subheading {
+  padding: 3rem; /* 3% viewport width */
   padding: 3% 7% 3% 7%;
   margin: 1% 1% 1% 1%;
 }
@@ -98,18 +111,20 @@ li {
 iframe {
   display:block;
   margin:auto;
-  width: 100%;
+  width: 80vw !important;
+  height: 40vw !important;
 }
 
 hr {
   border-top: 2px dashed lightcoral;
+  background-color: rgba(0,0,0,0);
 }
 
 .meet-the-bikes div {
   text-align: left;
   font-family: coolGraffitiFont, numbers;
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 1rem;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -122,23 +137,16 @@ hr {
   text-align: center;
 }
 
-
-
 .meet-the-bikes img {
   border-radius: 5%;
   margin:auto;
   object-fit:inherit;
-  min-width: 300px;
-  max-height: 40%;
-}
-
-.meet-the-bikes h3 {
-  text-transform: none;
+  width: 60vw;
 }
 
 button { 
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.7vw;
+  font-size: 2rem;
   border: none;
   background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
@@ -156,7 +164,7 @@ button {
   text-align: center;
   color: rgb(16, 66, 26);
   font-family: coolGraffitiFont, numbers;
-  font-size: 3.5vw;
+  font-size: 1.5rem;
 }
 
 .icon {
@@ -179,12 +187,7 @@ i:hover {
 .subheading2 {
   color: rgb(16, 66, 26);
   font-family: coolGraffitiFont, numbers;
-  font-size: 4.3vw;
-}
-
-.nav-and-main-container {
-  display: grid;
-  grid-column: 1 / span 2;
+  font-size: 2rem;
 }
 
 .bike-title {
