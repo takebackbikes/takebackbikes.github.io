@@ -181,3 +181,12 @@ i:hover {
   font-family: coolGraffitiFont, numbers;
   font-size: 4.3vw;
 }
+
+.nav-and-main-container {
+  display: grid;
+  grid-column: 1 / span 2;
+}
+
+.bike-title {
+  text-transform: uppercase;
+}
