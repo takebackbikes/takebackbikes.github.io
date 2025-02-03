@@ -51,7 +51,7 @@ const getBigNav = () => {
 const smallNav =  
   `<div class="smallNav">
     <a href="/"><img class="titleimg" loading="lazy" src=${titleimg} /></a>
-    <button onclick="changeDropDown()" class="dropDownButton"> ☰ </button>
+    <button onclick="changeDropDown()" class="dropDownButton"> <i class="fa-solid fa-bars"></i> </button>
   </div>`;
 
 const getDropDownNav = () => {
@@ -67,7 +67,7 @@ const getDropDownNav = () => {
     }
     return `
     <div class="dropDown"> 
-      <button onclick="changeDropDown()" class="dropDownButton"> x </button>
+      <button onclick="changeDropDown()" class="dropDownButton"> <i class="fa-solid fa-xmark"></i> </button>
       <div class="dropDownItems">
         ${navItemsDivs} 
       </div>

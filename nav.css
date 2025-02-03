@@ -1,6 +1,6 @@
 @font-face {
     font-family: coolGraffitiFont;
-    src: url(headingFont1.otf);
+    src: url(Borisna.ttf);
     font-size: x-large;
 }
 
@@ -11,8 +11,8 @@
   }
 
 :root {
-    --coral: rgb(204, 48, 48) !important;
-    --dark-coral: rgb(130, 27, 27);
+    --coral: rgb(202, 73, 73) !important;
+    --dark-coral: rgb(168, 30, 30);
 }
 
 .bigNav, .smallNav {
@@ -32,7 +32,7 @@
     padding: 1rem;
     white-space: nowrap;
     font-family: coolGraffitiFont, numbers;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: bold;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .dropDownItems {
-    font-size: 5rem;
+    font-size: 4rem;
     position: absolute;
     top: 10vh;
     width: 100vw! important;
@@ -89,7 +89,7 @@ a:active {
   background: var(--transparent);
   color: var(--coral);
   border: none;
-  font-size: 6rem;
+  font-size: 5rem;
   position: absolute;
   margin: 0 !important;
   padding: 0rem !important;
@@ -99,9 +99,9 @@ a:active {
 
 .dropDownItem {
   font-family: coolGraffitiFont, numbers;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 1rem 0rem !important;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 
@@ -110,6 +110,6 @@ a:active {
         font-family: coolGraffitiFont, numbers;
         font-size: 5rem;
         padding: 1rem 0rem !important;
-        text-transform: uppercase;
+        text-transform: none;
       }
     }
