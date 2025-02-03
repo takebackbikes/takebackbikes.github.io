@@ -96,7 +96,17 @@ a:active {
 
 .dropDownItem {
   font-family: coolGraffitiFont, numbers;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1rem 0rem !important;
   text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .dropDownItem {
+        font-family: coolGraffitiFont, numbers;
+        font-size: 5rem;
+        padding: 1rem 0rem !important;
+        text-transform: uppercase;
+      }
+    }
