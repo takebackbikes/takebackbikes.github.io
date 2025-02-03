@@ -1,27 +1,33 @@
 const titleimg = "/static/TBBGreenText.png";
-
-navItems = [
+let dropDownOn = false;
+const navItems = [
     {
         link: '/#palestine',
-        text: 'statement on palestine'
+        text: 'On Palestine'
     },
     {
         link: '/#raid',
-        text: 'the encampment and raid'
+        text: 'The Raid'
     },
     {
         link: '/#about',
-        text: 'about'
+        text: 'About'
     },
     {
         link: "/meet-the-bikes",
-        text: 'the bikes'
+        text: 'The Bikes'
     },
     {
         link: '/how-to-use-your-bike',
-        text: 'how to use'
+        text: 'How to Use'
     },
 ];
+
+const changeDropDown = () => {
+  dropDownOn = !dropDownOn;
+  console.log('button pressed!');
+  renderNav();
+}
 
 const getBigNav = () => {
     let navItemsDivs = "";
@@ -45,37 +51,28 @@ const getBigNav = () => {
 const smallNav =  
   `<div class="smallNav">
     <a href="/"><img class="titleimg" loading="lazy" src=${titleimg} /></a>
-    <button onClick=useDropDown() class="dropDownButton"> + </button>
+    <button onclick="changeDropDown()" class="dropDownButton"> ☰ </button>
   </div>`;
 
 const getDropDownNav = () => {
     let navItemsDivs = `
     <div class="dropDownItem">
-        <a href="/"> home </a>
+        <a href="/"> Home </a>
     </div>`;
     for (const navItem of navItems) {
         navItemsDivs += 
         `<div class="dropDownItem">
-            <a onClick=removeDropDown() href="${navItem.link}"> ${navItem.text} </a>
+            <a onclick="changeDropDown()" href="${navItem.link}"> ${navItem.text} </a>
         </div>`
     }
     return `
     <div class="dropDown"> 
-        <button onClick=useDropDown() class="dropDownButton"> x </button>
+      <button onclick="changeDropDown()" class="dropDownButton"> - </button>
+      <div class="dropDownItems">
         ${navItemsDivs} 
+      </div>
     </div>`;
 };
-
-let dropDownOn = false;
-
-const removeDropDown = () => {
-  dropDownOn = false;
-  renderNav();
-}
-const useDropDown = () => {
-  dropDownOn = !dropDownOn;
-  renderNav();
-}
 
 const doBigNav = () => {
   return getBigNav();
@@ -90,7 +87,8 @@ const doDropDownNav = () => {
 }
 
 const renderNav = () => {
-  const div = window.innerWidth > 1250 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
+  console.log('dropDownis:', dropDownOn);
+  const div = window.innerWidth > 1115 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
   if (dropDownOn) {
     document.querySelector('html').style.overflow = "hidden";
   } else {

@@ -1,16 +1,16 @@
 @font-face {
-    font-family: coolGraffitiFont;
-    src: url(headingFont1.otf);
-    font-size: x-large;
-}
-
-@font-face {
-  font-family: numbers;
+  font-family: headingType;
   src: url(headingFont2.ttf);
-  font-size: x-large;
+  font-size: small;
+}
+@font-face {
+  font-family: headingFont;
+  src: url(headingFont2.ttf);
+  font-size: small;
 }
 
 html {
+  background-color: linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3) !important;
   background: linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3);
   background: -moz-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* FF 3.6+ */  
   background: -ms-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* IE10 */  
@@ -25,55 +25,79 @@ body {
   color: rgb(0, 0, 0);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 2rem;
+  line-height: 1.4 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: 3s 1 linear slide-in;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3) !important;
+  background: linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3);
+  background: -moz-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* FF 3.6+ */  
+  background: -ms-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* IE10 */  
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,'#bcd4c3'), color-stop(100%, '#bcd4c3')); /* Safari 4+, Chrome 2+ */  
+  background: -webkit-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* Safari 5.1+, Chrome 10+ */  
+  background: -o-linear-gradient(#ffffff, rgb(234, 221, 223), #bcd4c3); /* Opera 11.10 */  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bcd4c3'); /* IE6 & IE7 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bcd4c3')"; /* IE8+ */ 
+}
+
+@media screen and (min-width:1000px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .subheading2 {
+    font-size: 3.5rem;
+  }
+
+  .front-img {
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh !important;
+  }
 }
 
 .enter {
-  animation: movein 1s linear;
+  animation: 3s 1 linear slide-in;
 }
 
 .front-img {
-  margin:auto;
-  object-fit: contain;
-  width: 60vw;
-  max-height: 40%;
-  border-radius: 5%;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: cover;
+  width: 100vw;
+  height: 60vh;
 }
 
 
 h2 {
-  font-size: 3.2rem;
-  font-family: coolGraffitiFont, numbers;
-  margin: 1rem 1rem 1rem 3rem;
+  font-size: 3.5rem;
+  font-family: headingFont;
+  margin: 1rem 0.5rem 1rem 3rem;
   color: rgb(138, 33, 33);
   text-align: center;
-  padding: 2%;
+  padding: 2% !important;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 2.5rem;
-  font-family: coolGraffitiFont, numbers;
-  color:lightcoral;
+  font-size: 3rem !important;
+  padding-top: 2rem;
+  font-family: headingFont;
+  color:rgb(204, 48, 48) !important;
   text-transform: uppercase;
-}
-
-@media (min-width: 1250px) {
-  .columncontainer {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 5%;
-  }
+  mix-blend-mode: multiply;
 }
 
 /* button and code styling */
 .button { 
-  font-family: coolGraffitiFont, numbers;
+  font-family: headingFont;
   text-align:center;
-  font-size: 2rem;
+  font-size: 2.7rem;
 }
 
 .button a {
@@ -81,7 +105,7 @@ h3 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color:rgb(43, 170, 43);
 }
 
@@ -90,9 +114,9 @@ a:hover {
 }
 
 .subheading {
-  padding: 3rem; /* 3% viewport width */
+  padding: 3rem 0rem 3em 3rem; /* 3% viewport width */
   padding: 3% 7% 3% 7%;
-  margin: 1% 1% 1% 1%;
+  margin: 1% 0.5rem 1% 1%;
 }
 
 .subheading div {
@@ -124,7 +148,7 @@ hr {
   border-radius: 5%;
   margin:auto;
   object-fit:inherit;
-  width: 30vw;
+  width: 40vw;
 }
 
 @media screen and (max-width: 1000px) {
@@ -138,15 +162,15 @@ hr {
 
 .meet-the-bikes h3, .meet-the-bikes hr,  .meet-the-bikes button {
   mix-blend-mode: multiply;
+  text-transform: none !important;
 }
 
 .meet-the-bikes div {
   text-align: left;
-  font-family: coolGraffitiFont, numbers;
+  font-family: headingFont;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   border: none;
-  background-color: rgba(0, 136, 255, 0);
   border-width: 2%;
   color:rgb(16, 66, 26);
   border-radius: 5%;
@@ -155,11 +179,12 @@ hr {
 }
 
 .meet-the-bikes h3 {
+  color: lightcoral !important;
   text-align: center;
 }
 
 button { 
-  font-family: coolGraffitiFont, numbers;
+  font-family: headingFont;
   font-size: 2rem;
   border: none;
   background-color: rgba(0, 136, 255, 0);
@@ -175,9 +200,9 @@ button {
 .footer {
   display: inline-block;
   line-height: 2;
-  text-align: center;
+  text-align: center !important;
   color: rgb(16, 66, 26);
-  font-family: coolGraffitiFont, numbers;
+  font-family: headingFont;
   font-size: 1.5rem;
 }
 
@@ -200,8 +225,8 @@ i:hover {
 
 .subheading2 {
   color: rgb(16, 66, 26);
-  font-family: coolGraffitiFont, numbers;
-  font-size: 2rem;
+  font-family: headingFont;
+  font-size: 3rem;
 }
 
 .bike-title {
