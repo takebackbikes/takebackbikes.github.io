@@ -59,6 +59,14 @@ body {
     width: 100vw;
     height: 80vh !important;
   }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 .enter {
@@ -75,7 +83,7 @@ body {
 
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 6rem;
   font-family: headingType, headingFont;
   margin: 1rem 0.5rem 1rem 3rem;
   color: rgb(138, 33, 33);
@@ -86,7 +94,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem !important;
+  font-size: 5rem !important;
   padding-bottom: 1rem;
   font-weight: bold;
   letter-spacing: .08rem;
