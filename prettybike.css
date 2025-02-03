@@ -1,6 +1,6 @@
 @font-face {
   font-family: headingType;
-  src: url(headingFont2.ttf);
+  src: url(headingFont1.otf);
   font-size: small;
 }
 @font-face {
@@ -76,18 +76,22 @@ body {
 
 h2 {
   font-size: 3.5rem;
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   margin: 1rem 0.5rem 1rem 3rem;
   color: rgb(138, 33, 33);
   text-align: center;
   padding: 2% !important;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 3rem !important;
-  padding-top: 2rem;
-  font-family: headingFont;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: .08rem;
+  padding-top: 2rem !important;
+  font-family: headingType, headingFont;
   color:rgb(204, 48, 48) !important;
   text-transform: uppercase;
   mix-blend-mode: multiply;
@@ -95,7 +99,7 @@ h3 {
 
 /* button and code styling */
 .button { 
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   text-align:center;
   font-size: 2.7rem;
 }
@@ -167,7 +171,7 @@ hr {
 
 .meet-the-bikes div {
   text-align: left;
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   text-align: center;
   font-size: 2rem;
   border: none;
@@ -184,7 +188,7 @@ hr {
 }
 
 button { 
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   font-size: 2rem;
   border: none;
   background-color: rgba(0, 136, 255, 0);
@@ -202,7 +206,7 @@ button {
   line-height: 2;
   text-align: center !important;
   color: rgb(16, 66, 26);
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   font-size: 1.5rem;
 }
 
@@ -225,7 +229,7 @@ i:hover {
 
 .subheading2 {
   color: rgb(16, 66, 26);
-  font-family: headingFont;
+  font-family: headingType, headingFont;
   font-size: 3rem;
 }
 

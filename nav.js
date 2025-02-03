@@ -67,7 +67,7 @@ const getDropDownNav = () => {
     }
     return `
     <div class="dropDown"> 
-      <button onclick="changeDropDown()" class="dropDownButton"> - </button>
+      <button onclick="changeDropDown()" class="dropDownButton"> x </button>
       <div class="dropDownItems">
         ${navItemsDivs} 
       </div>
@@ -90,9 +90,9 @@ const renderNav = () => {
   console.log('dropDownis:', dropDownOn);
   const div = window.innerWidth > 1115 ? doBigNav() : dropDownOn ? doDropDownNav() : doSmallNav();
   if (dropDownOn) {
-    document.querySelector('html').style.overflow = "hidden";
+    document.querySelector('html').style['overflow-y'] = "hidden";
   } else {
-    document.querySelector('html').style.overflow = "scroll";
+    document.querySelector('html').style['overflow-y'] = "scroll";
   }
   document.querySelector('#navContainer').innerHTML = div;
 };

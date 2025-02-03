@@ -1,6 +1,6 @@
 @font-face {
     font-family: coolGraffitiFont;
-    src: url(headingFont2.ttf);
+    src: url(headingFont1.otf);
     font-size: x-large;
 }
 
@@ -28,11 +28,12 @@
 
 #bigNavItems {
     text-align: center !important;
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 1rem;
     white-space: nowrap;
     font-family: coolGraffitiFont, numbers;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .divider {
@@ -43,15 +44,17 @@
 .titleimg {
     padding: 1rem;
     text-align: center;
-    max-height: 15rem !important;
+    height: 15rem !important;
     mix-blend-mode: multiply;
 }
+
 .dropDownItems {
     font-size: 5rem;
     position: absolute;
     top: 10vh;
     width: 100vw! important;
     text-align: center;
+    font-weight: bold;
 }
 
 #navContainer {
@@ -86,7 +89,7 @@ a:active {
   background: var(--transparent);
   color: var(--coral);
   border: none;
-  font-size: 5rem;
+  font-size: 6rem;
   position: absolute;
   margin: 0 !important;
   padding: 0rem !important;
@@ -96,7 +99,7 @@ a:active {
 
 .dropDownItem {
   font-family: coolGraffitiFont, numbers;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 1rem 0rem !important;
   text-transform: uppercase;
 }
